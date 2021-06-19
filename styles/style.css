@@ -1,61 +1,61 @@
-
-
-:root{
+:root {
     --wite-color: hsl(0, 0%, 100%);
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+body {
     font-size: 18px;
+    padding: 0;
+    margin: 0;
 }
-ul{
+ul {
     list-style-type: none;
 }
-a{
+a {
     text-decoration: none;
 }
-header{
+header {
     padding: 2rem;
     width: 100%;
 }
-nav{
+header nav {
     display: flex;
     justify-content: space-between;
 }
-nav ul{
+header nav ul {
     display: flex;
     justify-content: space-around;
 }
-nav ul li a{
+header nav ul li a {
     color: var(--wite-color);
     cursor: pointer;
-    font-family: 'Barlow', sans-serif;
+    font-family: "Barlow", sans-serif;
 }
-nav ul li{
+header nav ul li {
     margin: 0 1rem;
 }
-nav ul li:last-child a{
+header nav ul li:last-child a {
     padding: 0.8rem 1.6rem;
     color: var(--wite-color);
     border-radius: 1.5rem;
-    color:hsl(212, 27%, 19%);
+    color: hsl(212, 27%, 19%);
     background: var(--wite-color);
     text-transform: uppercase;
     font-weight: 700;
-    transition: .3s;
-    font-family: 'Fraunces', serif;
-    font-size: .8rem;
+    transition: 0.3s;
+    font-family: "Fraunces", serif;
+    font-size: 0.8rem;
 }
-header nav ul li:last-child a:hover{
+header nav ul li:last-child a:hover {
     background: hsla(0, 0%, 100%, 0.37);
     color: var(--wite-color);
 }
 
-.showcase{
+.showcase {
     background-image: url("../images/desktop/image-header.jpg");
     background-position: center;
     background-size: cover;
@@ -64,15 +64,15 @@ header nav ul li:last-child a:hover{
     flex-direction: column;
     align-items: center;
 }
-.showcase-text{
+.showcase-text {
     display: flex;
     flex-direction: column;
     align-items: center;
- 
+
     /* align-items: center; */
 }
-.showcase-text h1{
-    font-family: 'Fraunces', serif;
+.showcase-text h1 {
+    font-family: "Fraunces", serif;
     color: var(--wite-color);
     text-transform: uppercase;
     font-size: 3rem;
@@ -81,53 +81,51 @@ header nav ul li:last-child a:hover{
     margin: 4rem 0;
 }
 
-
-.features{
+.features {
     min-height: 100vh;
 }
-.features-item{
+.features-item {
     height: 85vh;
     width: 100%;
     display: flex;
     background: hsla(42, 92%, 90%, 0.192);
-
 }
-.features-item-content{
+.features-item-content {
     flex-basis: 50%;
     margin: auto;
     padding: 0 10%;
 }
-.features-item-content h2{
-    font-family: 'Fraunces',serif;
+.features-item-content h2 {
+    font-family: "Fraunces", serif;
     font-size: 3rem;
     font-weight: 900;
     line-height: 3rem;
     margin-bottom: 2rem;
     color: hsl(212, 27%, 19%);
 }
-.features-item-content p{
+.features-item-content p {
     color: rgb(148, 143, 143);
-    font-family: 'Barlow', sans-serif;
+    font-family: "Barlow", sans-serif;
     line-height: 1.8rem;
     margin-bottom: 3rem;
 }
 
-.learn-more{
+.learn-more {
     color: hsl(212, 27%, 19%);
-    font-family: 'Fraunces',serif;
+    font-family: "Fraunces", serif;
     font-weight: 700;
     text-transform: uppercase;
-    padding:0 0.5rem;
+    padding: 0 0.5rem;
     position: relative;
 }
 
-.learn-more::after{
+.learn-more::after {
     content: "";
     display: block;
     position: absolute;
     left: 0;
     bottom: -0.25rem;
-    z-index:-1;
+    z-index: -1;
     width: 100%;
     height: 0.7rem;
     border-radius: 1rem;
@@ -135,29 +133,28 @@ header nav ul li:last-child a:hover{
     transition: all 0.35s linear;
 }
 
-.learn-more-left::after{
+.learn-more-left::after {
     background-color: hsl(51, 100%, 49%);
 }
-.learn-more:hover:after{
+.learn-more:hover:after {
     opacity: 1;
 }
 
-.learn-more-right::after{
+.learn-more-right::after {
     background-color: hsl(7, 99%, 70%);
 }
 
-
-.features-item-img{
+.features-item-img {
     flex-basis: 50%;
     /* height: 100%; */
     overflow: hidden;
 }
-.features-item-img img{
+.features-item-img img {
     width: 100%;
     height: 100%;
 }
 
-.features-background{
+.features-background {
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
@@ -170,39 +167,35 @@ header nav ul li:last-child a:hover{
     padding-bottom: 3.5rem;
 }
 
-.features-background h2{
-    font-family: 'Fraunces',serif;
+.features-background h2 {
+    font-family: "Fraunces", serif;
     margin-bottom: 1rem;
-
 }
 .features-background p {
-    font-family: 'Barlow',serif;
+    font-family: "Barlow", serif;
     text-align: center;
     /* margin-top: 2rem; */
     /* margin-bottom: 2rem; */
-
 }
 
-.features-background-left{
+.features-background-left {
     background-image: url("../images/desktop/image-graphic-design.jpg");
     color: hsl(167, 40%, 24%);
-
-    
 }
-.features-background-right{
+.features-background-right {
     background-image: url("../images/desktop/image-photography.jpg");
     color: hsl(198, 62%, 26%);
 }
 
-.testimonials{
+.testimonials {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 6rem;
     background: hsla(42, 92%, 90%, 0.192);
 }
-.testimonials h2{
-    font-family: 'Fraunces',serif;
+.testimonials h2 {
+    font-family: "Fraunces", serif;
     font-weight: 900;
     color: hsl(210, 4%, 67%);
     text-transform: uppercase;
@@ -210,36 +203,117 @@ header nav ul li:last-child a:hover{
     letter-spacing: 0.3rem;
 }
 
-.clients{
+.clients {
     display: flex;
     /* width: 80%; */
     justify-content: space-between;
 }
-.client{
+.client {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     text-align: center;
 }
-.client-img{
+.client-img {
     border-radius: 100%;
     margin-bottom: 3rem;
 }
-.client-comment{
+.client-comment {
     color: hsl(198, 62%, 26%);
-    font-family: 'Barlow', sans-serif;
+    font-family: "Barlow", sans-serif;
     margin-bottom: 3rem;
     padding: 0 1rem;
 }
-.client-name{
-    font-family: 'Fraunces',serif;
+.client-name {
+    font-family: "Fraunces", serif;
     font-weight: 900;
     font-size: 1.1rem;
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
 }
-.client-job{
+.client-job {
     color: rgb(148, 143, 143);
-    font-family: 'Barlow', sans-serif;
+    font-family: "Barlow", sans-serif;
     font-size: 0.8rem;
+}
+
+.galery {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+}
+.galery-item {
+    flex-basis: 25%;
+    height: 100%;
+}
+.galery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer {
+    background: hsl(168, 32%, 55%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+}
+footer nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer nav ul {
+    display: flex;
+    margin-bottom: 4rem;
+}
+footer nav ul li {
+    margin: 0 2rem;
+}
+footer nav .logo {
+    display: block;
+    text-align: center;
+    width: 100%;
+    width: 100%;
+    margin: 2rem 0;
+}
+footer nav .logo img {
+    width: 80%;
+    height: auto;
+    filter: invert(1);
+}
+.logo-path {
+    fill: hsl(167, 40%, 24%);
+}
+footer a {
+    color: hsl(167, 40%, 24%);
+    font-family: "Barlow", sans-serif;
+    transition: all 0.3s;
+}
+footer a path {
+    transition: all 0.3s;
+}
+footer a:hover {
+    color: var(--wite-color);
+}
+footer a:hover path {
+    fill: var(--wite-color);
+}
+.icons {
+    display: flex;
+    margin-bottom: 1rem;
+}
+.icons li {
+    margin: 0rem 1rem;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%) !important;
+}
+.attribution a:hover{
+    color: var(--wite-color) !important;
 }
