@@ -336,9 +336,21 @@ footer a:hover path {
         padding: 1rem;
         top: 4rem;
         width: 100%;
-        border-radius: 4px;
+        border-radius: 4px 0px 4px 4px;
         background-color: var(--wite-color);
         flex-wrap: wrap;
+        display: none;
+    }
+    header nav ul::before{
+        content: "";
+        position: absolute;
+        /* background-color: red; */
+        width: 0;
+        height: 0;
+        border-bottom: 1.5rem solid var(--wite-color);
+        border-left: 1.5rem solid transparent;
+        right: 0;
+        bottom: 100%;
     }
 
     header nav ul li{
