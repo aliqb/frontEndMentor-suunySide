@@ -18,9 +18,13 @@ ul {
 a {
     text-decoration: none;
 }
+/* header */
 header {
     padding: 2rem;
     width: 100%;
+}
+.humburger-icon {
+    display: none;
 }
 header nav {
     display: flex;
@@ -40,7 +44,6 @@ header nav ul li {
 }
 header nav ul li:last-child a {
     padding: 0.8rem 1.6rem;
-    color: var(--wite-color);
     border-radius: 1.5rem;
     color: hsl(212, 27%, 19%);
     background: var(--wite-color);
@@ -54,7 +57,7 @@ header nav ul li:last-child a:hover {
     background: hsla(0, 0%, 100%, 0.37);
     color: var(--wite-color);
 }
-
+/* showcase */
 .showcase {
     background-image: url("../images/desktop/image-header.jpg");
     background-position: center;
@@ -81,7 +84,7 @@ header nav ul li:last-child a:hover {
     font-weight: 900;
     margin: 4rem 0;
 }
-
+/* features */
 .features {
     min-height: 100vh;
 }
@@ -187,7 +190,7 @@ header nav ul li:last-child a:hover {
     background-image: url("../images/desktop/image-photography.jpg");
     color: hsl(198, 62%, 26%);
 }
-
+/* testimonials */
 .testimonials {
     display: flex;
     text-align: center;
@@ -240,7 +243,7 @@ header nav ul li:last-child a:hover {
     font-family: "Barlow", sans-serif;
     font-size: 0.8rem;
 }
-
+/* galery */
 .galery {
     display: flex;
     width: 100%;
@@ -255,6 +258,7 @@ header nav ul li:last-child a:hover {
     height: 100%;
     object-fit: cover;
 }
+/* footer */
 footer {
     background: hsl(168, 32%, 55%);
     display: flex;
@@ -318,49 +322,97 @@ footer a:hover path {
 .attribution a {
     color: hsl(228, 45%, 44%) !important;
 }
-.attribution a:hover{
+.attribution a:hover {
     color: var(--wite-color) !important;
 }
-@media screen and (max-width:660px) {
-    header nav ul{
-        display: none;
+@media screen and (max-width: 660px) {
+    /* header */
+    header nav{
+        position: relative;
     }
-    .features-item{
+    header nav ul {
+        /* display: none; */
+        position: absolute;
+        padding: 1rem;
+        top: 4rem;
+        width: 100%;
+        border-radius: 4px;
+        background-color: var(--wite-color);
+        flex-wrap: wrap;
+    }
+
+    header nav ul li{
+        flex-basis: 100%;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    header nav ul li a{
+        color: rgb(148, 143, 143);
+    }
+    header nav ul li:last-child a{
+        background-color: hsl(51, 100%, 49%);
+    }
+    header nav ul li:last-child a:hover{
+        background-color:  rgb(61, 190, 255);
+    }
+    .humburger-icon {
+        display: inline-block;
+        transition: opacity 0.3s;
+    }
+    .humburger-icon:hover{
+        opacity: 0.8;
+    }
+    /* fearuters */
+    .features-item {
         flex-wrap: wrap;
         height: 100vh;
     }
-    .features-item:first-child{
+    .features-item:first-child {
         flex-wrap: wrap-reverse;
     }
-    .features-item-content{
+    .features-item:last-child {
+        height: 200vh;
+    }
+    .features-item-content {
         flex-basis: 100%;
         height: 60%;
         text-align: center;
         padding: 2rem;
     }
-    .features-item-img{
+    .features-item-img {
         flex-basis: 100%;
         height: 40%;
-        /* flex-wrap: nowrap; */
     }
-    .features-background{
+    .features-background {
         flex-basis: 100%;
-        height: 100vh;
+        height: 50%;
     }
     .features-background h2 {
         font-size: 2.5rem;
     }
-    .features-background p{
+    .features-background p {
         font-size: 1.2rem;
     }
-    .testimonials{
-        /* padding: 0 6rem; */
+    /* testimonals */
+    .testimonials {
         overflow: hidden;
     }
-    .clients{
+    .clients {
         flex-wrap: wrap;
     }
-    .client{
+    .client {
         width: 100%;
+        margin-bottom: 8rem;
+    }
+    /* galery */
+    .galery {
+        flex-wrap: wrap;
+        /* height: 100vh; */
+    }
+
+    .galery-item {
+        flex-basis: 50%;
+        height: 100%;
+        height: 50%;
     }
 }
