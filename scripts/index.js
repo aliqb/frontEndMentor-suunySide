@@ -1,14 +1,9 @@
 let humbergur = document.querySelector(".humburger-icon");
-let menu = document.querySelector(".mobile-menu");
+let menu = document.querySelector(".menu");
 
 
 humbergur.addEventListener('click',toggle);
 
 function toggle(){
-    if(menu.classList.contains('d-none')){
-        console.log('yes');
-    }else{
-        console.log('false');
-    }
-    menu.classList.toggle('d-none');
+    menu.classList.toggle("toggle");
 }

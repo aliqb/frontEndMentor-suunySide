@@ -57,9 +57,10 @@ header nav ul li:last-child a:hover {
     background: hsla(0, 0%, 100%, 0.37);
     color: var(--wite-color);
 }
-.d-none{
-    display: none !important;
+.toggle{
+    display: flex !important;
 }
+
 /* showcase */
 .showcase {
     background-image: url("../images/desktop/image-header.jpg");
@@ -333,12 +334,12 @@ footer a:hover path {
     header nav{
         position: relative;
     }
-    header nav ul{
-        display: none;
+    .toggle{
+        display: none !important;
     }
-    .mobile-menu {
+    header nav ul {
         /* display: none; */
-        display: flex;
+        /* display: flex; */
         position: absolute;
         padding: 1rem;
         top: 4rem;
@@ -348,7 +349,7 @@ footer a:hover path {
         flex-wrap: wrap;
       
     }
-    .mobile-menu::before{
+    header nav ul::before{
         content: "";
         position: absolute;
         /* background-color: red; */
@@ -360,18 +361,18 @@ footer a:hover path {
         bottom: 100%;
     }
 
-    .mobile-menu li{
+    header nav ul li{
         flex-basis: 100%;
         margin-bottom: 2rem;
         text-align: center;
     }
-    .mobile-menu li a{
+    header nav ul li a{
         color: rgb(148, 143, 143);
     }
-    .mobile-menu li:last-child a{
+    header nav ul li:last-child a{
         background-color: hsl(51, 100%, 49%);
     }
-    .mobile-menu li:last-child a:hover{
+    header nav ul li:last-child a:hover{
         background-color:  rgb(61, 190, 255);
     }
     .humburger-icon {
